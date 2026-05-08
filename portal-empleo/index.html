@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Empleo Universitario</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-briefcase"></i>
+            <h2>UniJobs</h2>
+        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#vacantes">Vacantes</a>
+            <a href="#cv">CV</a>
+            <a href="#postulaciones">Postulaciones</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button class="btn-login">Iniciar Sesión</button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-text">
+
+            <h1>
+                Encuentra tu Primera Oportunidad Laboral
+            </h1>
+
+            <p>
+                Conectamos estudiantes universitarios con empresas
+                que buscan talento joven y preparado.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="btn-primary">
+                    Buscar Empleo
+                </button>
+
+                <button class="btn-secondary">
+                    Publicar Vacante
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+            alt="Portal de empleo universitario">
+
+        </div>
+
+    </section>
+
+
+    <!-- ESTADISTICAS -->
+
+    <section class="stats">
+
+        <div class="card-stat">
+            <h2>+500</h2>
+            <p>Vacantes Activas</p>
+        </div>
+
+        <div class="card-stat">
+            <h2>+1200</h2>
+            <p>Estudiantes Registrados</p>
+        </div>
+
+        <div class="card-stat">
+            <h2>+150</h2>
+            <p>Empresas Asociadas</p>
+        </div>
+
+    </section>
+
+
+    <!-- BUSQUEDA -->
+
+    <section class="search-section">
+
+        <h2>Encuentra Vacantes por Carrera</h2>
+
+        <div class="search-box">
+
+            <input type="text"
+            id="searchInput"
+            placeholder="Buscar empleo...">
+
+            <select id="careerFilter">
+
+                <option value="all">
+                    Todas las carreras
+                </option>
+
+                <option value="sistemas">
+                    Ingeniería de Sistemas
+                </option>
+
+                <option value="diseno">
+                    Diseño Gráfico
+                </option>
+
+                <option value="marketing">
+                    Marketing Digital
+                </option>
+
+                <option value="administracion">
+                    Administración
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- VACANTES -->
+
+    <section class="jobs" id="vacantes">
+
+
+        <!-- VACANTE 1 -->
+
+        <div class="job-card" data-category="sistemas">
+
+            <h3>Desarrollador Web Junior</h3>
+
+            <p class="company">
+                Tech Solutions
+            </p>
+
+            <p>
+                Buscamos estudiante con conocimientos
+                en HTML, CSS y JavaScript.
+            </p>
+
+            <div class="job-info">
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Remoto
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-money-bill"></i>
+                    $2.000.000
+                </span>
+
+            </div>
+
+            <button class="apply-btn">
+                Postularme
+            </button>
+
+        </div>
+
+
+
+        <!-- VACANTE 2 -->
+
+        <div class="job-card" data-category="diseno">
+
+            <h3>Diseñador UI/UX</h3>
+
+            <p class="company">
+                Creative Studio
+            </p>
+
+            <p>
+                Se requiere manejo de Figma
+                y diseño de interfaces modernas.
+            </p>
+
+            <div class="job-info">
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Híbrido
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-money-bill"></i>
+                    $1.800.000
+                </span>
+
+            </div>
+
+            <button class="apply-btn">
+                Postularme
+            </button>
+
+        </div>
+
+
+
+        <!-- VACANTE 3 -->
+
+        <div class="job-card" data-category="marketing">
+
+            <h3>Asistente de Marketing</h3>
+
+            <p class="company">
+                MarketPro
+            </p>
+
+            <p>
+                Gestión de redes sociales
+                y campañas digitales.
+            </p>
+
+            <div class="job-info">
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Presencial
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-money-bill"></i>
+                    $1.500.000
+                </span>
+
+            </div>
+
+            <button class="apply-btn">
+                Postularme
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUBIDA DE CV -->
+
+    <section class="cv-section" id="cv">
+
+        <h2>Sube tu Hoja de Vida</h2>
+
+        <div class="upload-box">
+
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+            <p>
+                Arrastra tu CV o selecciona un archivo
+            </p>
+
+            <input type="file" id="cvFile">
+
+        </div>
+
+        <button class="btn-primary upload-btn">
+            Subir CV
+        </button>
+
+        <p id="fileName"></p>
+
+    </section>
+
+
+
+    <!-- POSTULACIONES -->
+
+    <section class="applications" id="postulaciones">
+
+        <h2>Estado de Postulaciones</h2>
+
+        <div class="application-card">
+
+            <h3>Desarrollador Web Junior</h3>
+
+            <p>
+                Empresa: Tech Solutions
+            </p>
+
+            <span class="status pending">
+                Pendiente
+            </span>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <h3>Diseñador UI/UX</h3>
+
+            <p>
+                Empresa: Creative Studio
+            </p>
+
+            <span class="status accepted">
+                Aceptado
+            </span>
+
+        </div>
+
+
+        <div class="application-card">
+
+            <h3>Asistente Marketing</h3>
+
+            <p>
+                Empresa: MarketPro
+            </p>
+
+            <span class="status rejected">
+                Rechazado
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer id="contacto">
+
+        <h2>UniJobs</h2>
+
+        <p>
+            Portal de Empleo Universitario
+        </p>
+
+        <div class="socials">
+
+            <i class="fa-brands fa-facebook"></i>
+
+            <i class="fa-brands fa-instagram"></i>
+
+            <i class="fa-brands fa-linkedin"></i>
+
+        </div>
+
+        <p class="copy">
+            © 2026 Todos los derechos reservados
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
